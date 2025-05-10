@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peer Support Circles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Arrow -->
+    <div class="arrow left" onclick="changeSlide(-1)" role="button" aria-label="Previous Slide" tabindex="0">←</div>
+
+    <div class="slides" role="region" aria-live="polite" aria-label="Slides for Peer Support Circles">
+      <div class="slide active" role="tabpanel" aria-labelledby="slide1">
+        <span class="icon-bg" aria-label="Speech Bubble" role="img">💬</span>
+        <h1 id="slide1">Burnout is Real.</h1>
+        <p>1 in 3 medical students experience anxiety or depression.</p>
+        <p class="tagline">Medics Need Safe Spaces Too.</p>
+      </div>
+      <div class="slide" role="tabpanel" aria-labelledby="slide2">
+        <span class="icon-bg" aria-label="Shield" role="img">🛡️</span>
+        <h1 id="slide2">Safe Spaces Matter.</h1>
+        <p>Peer Support Circles provide confidential, judgment-free support.</p>
+        <p class="tagline">Cameras optional. Empathy required.</p>
+      </div>
+      <div class="slide" role="tabpanel" aria-labelledby="slide3">
+        <span class="icon-bg" aria-label="Handshake" role="img">🤝</span>
+        <h1 id="slide3">Your Voice Can Help.</h1>
+        <p>We’re recruiting mental health advocates & psychology students.</p>
+        <p class="tagline">Volunteer for 2–4 hours/week. Make an impact.</p>
+      </div>
+      <div class="slide" role="tabpanel" aria-labelledby="slide4">
+        <span class="icon-bg" aria-label="Megaphone" role="img">📢</span>
+        <h1 id="slide4">Spread the Word.</h1>
+        <p>Not a facilitator? Share or connect us with wellness allies.</p>
+        <p class="tagline">Everyone can be part of the solution.</p>
+      </div>
+    </div>
+
+    <!-- Right Arrow -->
+    <div class="arrow right" onclick="changeSlide(1)" role="button" aria-label="Next Slide" tabindex="0">→</div>
+
+    <!-- Dot Navigation -->
+    <div class="dot-navigation" aria-label="Slide navigation">
+      <span class="dot" onclick="goToSlide(0)" role="button" aria-label="Slide 1" tabindex="0"></span>
+      <span class="dot" onclick="goToSlide(1)" role="button" aria-label="Slide 2" tabindex="0"></span>
+      <span class="dot" onclick="goToSlide(2)" role="button" aria-label="Slide 3" tabindex="0"></span>
+      <span class="dot" onclick="goToSlide(3)" role="button" aria-label="Slide 4" tabindex="0"></span>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="changeSlide(-1)" aria-label="Previous Slide">← Previous</button>
+      <button onclick="changeSlide(1)" aria-label="Next Slide">Next →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
